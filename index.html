@@ -151,19 +151,19 @@
         <div class="col-md-7 col-lg-5">
           <div class="contacts__form">
             <p class="contacts__form-title">Заполните форму</p>
-            <form class="js-form" action="http://formspree.io/andreev.business.mail@gmail.com">
+            <form class="js-form" action="http://formspree.io/andreev.business.mail@gmail.com" type="post">
               <div class="form-group">
-                <input class="form-field js-field-name" type="text" placeholder="Как Вас зовут?" required>
+                <input class="form-field js-field-name" name="name" type="text" placeholder="Как Вас зовут?" required>
                 <span class="form-validation"></span>
                 <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
               </div>
               <div class="form-group">
-                <input class="form-field js-field-email" type="email"  placeholder="Ваш E-mail" required>
+                <input class="form-field js-field-email" name="_replyto"  type="email"  placeholder="Ваш E-mail" required>
                 <span class="form-validation"></span>
                 <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
               </div>
               <div class="form-group">
-                <textarea class="form-field js-field-message" placeholder="Ваше Сообщение" required></textarea>
+                <textarea class="form-field js-field-message" name="body" placeholder="Ваше Сообщение" required></textarea>
                 <span class="form-validation"></span>
                 <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
               </div>
