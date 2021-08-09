@@ -10,6 +10,26 @@
   <link rel="stylesheet" href="assets/css/color.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata" rel="stylesheet">
   <link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
+
+  <style>
+    @keyframes animatedBackground {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 100% 0;
+      }
+    }
+    @-webkit-keyframes backgroundScroll {
+      from {background-position: 0 0;}
+      to {background-position: -400px 0;}
+    }
+
+    @keyframes backgroundScroll {
+      from {background-position: 0 0;}
+      to {background-position: -400px 0;}
+    }
+  </style>
 </head>
 <body>
 
@@ -52,25 +72,26 @@
 <!-- Mobile menu -->
 
 <!--Header-->
-  <header class="main-header" style="background-image: url(assets/img/background.png)">
-    <div class="container">
-      <div class="row personal-profile">
-        <div class="col-md-4 personal-profile__avatar">
-          <img class="" src="assets/img/face.png" alt="avatar">
-        </div>
-        <div class="col-md-8">
-          <p class="personal-profile__name">Александр Андреев</p>
-          <p class="personal-profile__work">Предприниматель, Политик</p>
-          
-          <p class="personal-profile__social">
-            <a href="https://github.com/AndreevAA" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://vk.com/official.andreevs.page" target="_blank"><i class="fa fa-vk"></i></a>
-            <a href="https://fb.com/official.andreevs.page" target="_blank"><i class="fa fa-facebook-square"></i></a>
-          </p>
-        </div>
-      </div>
+<header class="main-header" style="background-position: 0 0; background-repeat: repeat-x; background-image: url(assets/img/background.png); -webkit-animation: backgroundScroll 20s linear infinite;
+animation: backgroundScroll 20s linear infinite;">
+<div class="container">
+  <div class="row personal-profile">
+    <div class="col-md-4 personal-profile__avatar">
+      <img class="" src="assets/img/face.png" alt="avatar">
     </div>
-  </header>
+    <div class="col-md-8">
+      <p class="personal-profile__name">Александр Андреев</p>
+      <p class="personal-profile__work">Предприниматель, Политик</p>
+
+      <p class="personal-profile__social">
+        <a href="https://github.com/AndreevAA" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://vk.com/official.andreevs.page" target="_blank"><i class="fa fa-vk"></i></a>
+        <a href="https://fb.com/official.andreevs.page" target="_blank"><i class="fa fa-facebook-square"></i></a>
+      </p>
+    </div>
+  </div>
+</div>
+</header>
 <!--Header-->
 
 <!--Hello-->
